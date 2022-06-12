@@ -14,15 +14,15 @@ we can begin selling a new category of items. First an introduction to our syste
 
 Pretty simple, right? Well this is where it gets interesting:
 
---- 
-Base rules
+**Base rules**
+
 * Once the sell by date has passed, Quality degrades twice as fast
 * The Quality of an item is never negative
 * The Quality of an item is never more than 50
 * An item can never have its Quality increase above 50
 
---- 
-Named items
+**Named items**
+
 * "Aged Brie" actually increases in Quality the older it gets
 * "Backstage passes", like aged brie, increases in Quality as its SellIn value approaches;
   quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but
@@ -31,7 +31,6 @@ Named items
 * "Sulfuras" is a legendary item and as such its Quality is 80 and it never alters;
 * "Conjured" items degrade in Quality twice as fast as normal items;
 
----
 Feel free to make any changes to the UpdateQuality method and add any new code as long as everything
 still works correctly. However, do not alter the Item class or Items property as those belong to the
 goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code
